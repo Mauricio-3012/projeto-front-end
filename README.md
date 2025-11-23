@@ -1,4 +1,4 @@
-# Projeto Front-end
+# TopTurismo - Sistema de reserva de viagens
 Projeto Integrador Senac - Módulo 1 (Front-End)
 - Sistema de Reserva de Viagens
 - Feito com HTML, CSS, JavaScript e Bootstrap
