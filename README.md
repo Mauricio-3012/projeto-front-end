@@ -1,5 +1,5 @@
 <div>
-<h1 align='center'>TopTurismo</h1>
+<h1 align='center'>✈️TopTurismo - Sistema de Reserva de Viagens</h1>
 <p>TopTurismo é um site de reservas de viagens criado com HTML, CSS, JavaScript e Bootstrap, oferecendo uma interface moderna para navegar por destinos turísticos, visualizar imagens e calcular reservas. A página principal exibe um carrossel com destinos populares, cards informativos e acesso rápido ao formulário de reserva. Já a página de reservas permite inserir nome, escolher destino, selecionar quantidade de passageiros e tipo de assento, exibindo um resumo da viagem ao final. O projeto também conta com suporte a tema claro/escuro, responsividade e ícones para um toque mais profissional.</p>
 	<div align='center'>
   		<img src="./imagens/top-turismo-preview.gif"" width="900"/>
@@ -7,14 +7,25 @@
 </div>
 
 <div>
-	<h2>Funcionalidades</h2>
-	<ul>
-		<li>Projetos com interfaces responsivas para diferentes tamanhos de tela;</li>
-		<li>Interação com o usuário através de botões e eventos;</li>
-		<li>Atualizações dinâmicas de dados na tela com JavaScript;</li>
-		<li>Layout e design modernos com CSS3 e Boostrap;</li>
-		<li>Validação de ações do usuário.</li>
-	</ul> 
+	<h2>⚙️ Funcionalidades</h2>
+<ul>
+  <li>Exibição de destinos turísticos em um carrossel interativo</li>
+  <li>Cards informativos com imagens e descrições dos destinos</li>
+  <li>Formulário de reserva com:
+    <ul>
+      <li>Preenchimento do nome do passageiro</li>
+      <li>Escolha do destino</li>
+      <li>Seleção da quantidade de passageiros</li>
+      <li>Escolha do tipo de assento</li>
+    </ul>
+  </li>
+  <li>Cálculo automático do resumo da viagem</li>
+  <li>Exibição dos dados finais da reserva ao usuário</li>
+  <li>Suporte a tema claro e escuro (dark mode)</li>
+  <li>Layout totalmente responsivo (desktop e mobile)</li>
+  <li>Interface moderna com uso de Bootstrap</li>
+  <li>Uso de ícones para melhorar a experiência visual</li>
+</ul>
 </div>
 
 <div align='center'>
@@ -69,7 +80,7 @@
 </div>
 
 <div align="center">
-	<h2>Autor</h2>
+	<h2>Autores e Colaboradores</h2>
 	<p>Maurício Alves</p>
 	Turma de Tecnologia em Informática para Internet (Vespertino) - Senac DF
 </div>
