@@ -1,11 +1,11 @@
-<div align='center'>
-<h1>TopTurismo</h1>
+<div>
+<h1 align='center'>TopTurismo</h1>
 <p>TopTurismo é um site de reservas de viagens criado com HTML, CSS, JavaScript e Bootstrap, oferecendo uma interface moderna para navegar por destinos turísticos, visualizar imagens e calcular reservas. A página principal exibe um carrossel com destinos populares, cards informativos e acesso rápido ao formulário de reserva. Já a página de reservas permite inserir nome, escolher destino, selecionar quantidade de passageiros e tipo de assento, exibindo um resumo da viagem ao final. O projeto também conta com suporte a tema claro/escuro, responsividade e ícones para um toque mais profissional.</p>
-  <img src=""" width="700"/>
+  <img src="./imagens/top-turismo-preview.gif"" width="900"/>
 </div>
 
 <div>
-	<h2>Sobre</h2>
+	<h2>Funcionalidades</h2>
 	<ul>
 		<li>Projetos com interfaces responsivas para diferentes tamanhos de tela;</li>
 		<li>Interação com o usuário através de botões e eventos;</li>
@@ -26,7 +26,6 @@
   <img src="https://img.icons8.com/?size=100&id=bVGqATNwfhYq&format=png&color=000000.svg" height="60"/>
   <img src="https://www.svgrepo.com/show/378781/chrome.svg" height="60"/>
   <img src="https://img.icons8.com/?size=100&id=PndQWK6M1Hjo&format=png&color=000000.svg" height="60"/>
-  
 </p>
 </div>
 
