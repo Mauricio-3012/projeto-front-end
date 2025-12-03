@@ -51,9 +51,9 @@
 
 <div>
   <h2>Como clonar</h2>
-   <p>No terminal do VS Code digite:​ git clone https://github.com/Mauricio-3012/Senac.git </p>
+   <p>No terminal do VS Code digite:​ git clone https://github.com/Mauricio-3012/projeto-front-end.git </p>
 
-  <p> No GitHub Desktop: no menu > File(Arquivo) > Clone a repository(Clonar repositório) > Selecione a aba URL, no campo URL, cole o link do repositório: https://github.com/Mauricio-3012/Senac.git </p>
+  <p> No GitHub Desktop: no menu > File(Arquivo) > Clone a repository(Clonar repositório) > Selecione a aba URL, no campo URL, cole o link do repositório: https://github.com/Mauricio-3012/projeto-front-end.git </p>
 </div>
 
 <div>
@@ -62,25 +62,15 @@
 		<li>Implementar novas funcionalidades com JavaScript (ES6+)</li>
 		<li>Melhorar a responsividade para dispositivos móveis</li>
 		<li>Organizar melhor a estrutura do código (HTML, CSS e JS)</li>
-		<li>Adicionar validações de formulários</li>
-		<li>Implementar modo escuro (dark mode)</li>
-	</ul>
-</div>
-
-<div>
-  <h2>O que aprendi</h2>
-  <ul>
-		<li>Estruturação de páginas com HTML5</li>
-		<li>Estilização completa de layouts com CSS3</li>
-		<li>Manipulação de DOM (eventos, cliques, respostas na tela)</li>
-		<li>Organização de arquivos e boas práticas de projeto</li>
-		<li>Uso do VS Code como ambiente de desenvolvimento</li>
-		<li>Versionamento de código com Git e GitHub</li>
+		<li>Adicionar validações do formulário re reservas</li>
+		<li>Implementar outras funcionalidades no modo escuro (dark mode)</li>
 	</ul>
 </div>
 
 <div align="center">
 	<h2>Autores e Colaboradores</h2>
 	<p>Maurício Alves</p>
+	<p>Fabiano Assunção</p>
+	<p>David Lucas</p>
 	Turma de Tecnologia em Informática para Internet (Vespertino) - Senac DF
 </div>
