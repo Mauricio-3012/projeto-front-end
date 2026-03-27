@@ -13,6 +13,7 @@
   --text: #f5f5f5;
   --primary: #070F1F;
   --primary-hover: rgb(5, 49, 5);
+  --primary-hover: #af8b28;
   --card-bg: #323d4d;
   --btn-bg: #DBA91D;
   --btn-hover: var(--primary-hover);
