@@ -14,10 +14,10 @@
   --primary: #070F1F;
   --primary-hover: rgb(5, 49, 5);
   --primary-hover: #af8b28;
-  --card-bg: #323d4d;
+  --card-bg: #070f1f;
   --btn-bg: #DBA91D;
   --btn-hover: var(--primary-hover);
-  --bg-mobile: #212529;
+  --bg-mobile: #070F1F;
 }
 body {
   background-color: var(--bg);
@@ -107,15 +107,15 @@ footer {
     linear-gradient(180deg, rgba(13, 110, 253, 0.15), transparent 85%),
     radial-gradient(ellipse at top left, rgba(13, 110, 253, 0.2), transparent 50%),
     radial-gradient(ellipse at bottom right, rgba(48, 108, 177, 0.2), transparent 50%),
-    radial-gradient(ellipse at center left, rgba(82, 157, 201, 0.473), transparent 50%);
+    radial-gradient(ellipse at center left, rgba(255, 255, 255, 0.473), transparent 50%);
 }
 .dark-mode.pagina-reservas {
   background-color: #0b132c98;
   background-image:
-    linear-gradient(180deg, rgba(76, 146, 250, 0.25), transparent 85%),
-    radial-gradient(ellipse at top left, rgba(113, 166, 245, 0.25), transparent 50%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.25), transparent 85%),
+    radial-gradient(ellipse at top left, rgba(18, 26, 39, 0.25), transparent 50%),
     radial-gradient(ellipse at bottom right, rgba(66, 106, 193, 0.25), transparent 50%),
-    radial-gradient(ellipse at center left, rgba(35, 177, 243, 0.37), transparent 50%);
+    radial-gradient(ellipse at center left, rgba(14, 56, 75, 0.37), transparent 50%);
 }
 @media (max-width: 430px) {
   .img-opacidade{
@@ -132,12 +132,17 @@ footer {
   }
   form{
     background-color: var(--bg);
-    margin: 0 20px;
+    margin-top: 50px;
+    margin: 10px;
     border-radius: 10px;
   }
   #resultado{
     background-color: var(--bg-mobile);
     margin: 0 20px;
     border-radius: 10px;
+  }
+  nav{
+    background-color: var(--primary);
+    padding: 1px;
   }
 }
