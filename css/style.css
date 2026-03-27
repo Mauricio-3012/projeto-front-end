@@ -14,7 +14,7 @@
   --primary: #070F1F;
   --primary-hover: rgb(5, 49, 5);
   --primary-hover: #af8b28;
-  --card-bg: #070f1f;
+  --card-bg: #49494981;
   --btn-bg: #DBA91D;
   --btn-hover: var(--primary-hover);
   --bg-mobile: #070F1F;
@@ -83,6 +83,11 @@ a:hover {
 section {
   background-color: var(--bg);
   padding: 2rem 0;
+}
+#reservaForm {
+  background-color: var(--primary);
+  padding: 20px;
+  border-radius: 10px;
 }
 footer {
   background-color: var(--primary);
