@@ -63,7 +63,6 @@
 		<li>Melhorar a responsividade para dispositivos móveis</li>
 		<li>Organizar melhor a estrutura do código (HTML, CSS e JS)</li>
 		<li>Adicionar validações do formulário re reservas</li>
-		<li>Implementar outras funcionalidades no modo escuro (dark mode)</li>
 	</ul>
 </div>
 
