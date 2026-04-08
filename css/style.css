@@ -61,7 +61,6 @@ nav .text-a:hover {
 .carousel-item img {
   transition: transform 3s;
 }
-
 .carousel-item.active img {
   transform: scale(1.1);
 }
