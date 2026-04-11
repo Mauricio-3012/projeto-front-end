@@ -10,6 +10,7 @@
   --btn-hover: var(--primary-hover);
   --bg-mobile: #fff;
 }
+
 .dark-mode {
   --bg: #070f1f;
   --text: #f5f5f5;
@@ -21,6 +22,7 @@
   --btn-hover: var(--primary-hover);
   --bg-mobile: #070F1F;
 }
+
 body {
   background-color: var(--bg);
   color: var(--text);
@@ -28,42 +30,70 @@ body {
   margin: 0;
   letter-spacing: 0.2px;
 }
+
 .navbar,
 .custom-bg {
   background-color: var(--primary) !important;
 }
 
+.busca-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 nav .text-a:hover {
   color: white;
 }
+
 .text-a {
   color: #fff;
   text-decoration: none;
-  padding: 7px;
+  padding: 0;
   font-size: 20px;
   font-weight: 600;
   font-family: 'Oswald', Helvetica, Arial, sans-serif;
 }
+
+.busca-caixa input {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 220px;
+  transition: 0.3s;
+}
+
+.busca-caixa input:focus {
+  width: 260px;
+}
+
 .dropdown-menu {
   background-color: var(--primary);
   color: var(--text);
   border-color: var(--primary);
 }
+
 .dropdown-item {
   color: white;
 }
+
 .dropdown-item:hover {
   color: #000;
 }
+
 .img-opacidade {
   filter: brightness(60%);
 }
+
 .carousel-item img {
   transition: transform 3s;
 }
+
 .carousel-item.active img {
   transform: scale(1.1);
 }
+
 .carousel-caption {
   top: 50%;
   bottom: auto;
@@ -71,6 +101,7 @@ nav .text-a:hover {
   text-align: center;
   padding: 0 10px;
 }
+
 .carousel-caption h3 {
   font-size: clamp(2rem, 10vw, 5rem);
   letter-spacing: 2px;
@@ -78,57 +109,71 @@ nav .text-a:hover {
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
   margin: 0;
 }
+
 .btn-custom {
   background-color: var(--btn-bg);
   color: #fff;
   border: none;
   margin-bottom: 3px;
 }
+
 .btn-custom:hover {
   background-color: var(--btn-hover);
   color: white;
 }
+
 .card {
   background-color: var(--card-bg);
   color: var(--text);
 }
+
 a {
   color: var(--text);
   text-decoration: none;
 }
+
 a:hover {
   color: #0e0d57;
 }
+
 .form-control,
 .form-select {
   background-color: var(--card-bg);
 }
+
 section {
   background-color: var(--bg);
   padding: 2rem 0;
 }
+
 #reservaForm {
   background-color: var(--bg);
   padding: 20px;
+  margin-top: 100px;
+  margin-bottom: 30px;
   border-radius: 10px;
 }
+
 footer {
   background-color: var(--primary);
   color: #fff;
   padding: 20px;
   text-align: center;
 }
+
 .dark-mode .form-control,
 .dark-mode .form-select {
   background-color: var(--card-bg);
   color: var(--text);
 }
+
 #resultado {
   background-color: var(--bg-mobile);
   margin: 0 20px;
   border-radius: 10px;
   padding: 10px;
-  }
+}
+
 .pagina-reservas {
   background-color: rgba(255, 255, 255, 0.514);
   background-image:
@@ -137,6 +182,7 @@ footer {
     radial-gradient(ellipse at bottom right, rgba(48, 108, 177, 0.2), transparent 50%),
     radial-gradient(ellipse at center left, rgba(255, 255, 255, 0.473), transparent 50%);
 }
+
 .dark-mode.pagina-reservas {
   background-color: #0b132c98;
   background-image:
@@ -145,35 +191,49 @@ footer {
     radial-gradient(ellipse at bottom right, rgba(66, 106, 193, 0.25), transparent 50%),
     radial-gradient(ellipse at center left, rgba(14, 56, 75, 0.37), transparent 50%);
 }
-@media (max-width: 430px) {
-  .img-opacidade{
-    opacity: 0.7;
-    filter: brightness(30%);
+
+@media (max-width: 768px) {
+  .img-opacidade {
+    filter: brightness(60%);
     object-fit: cover;
     height: 400px;
   }
+
   .carousel-item img {
     height: 300px;
     object-fit: cover;
   }
-  .btn-custom{
+
+  .logo-texto {
+    display: none;
+  }
+
+  .busca-caixa input {
+    width: 150px;
+  }
+
+  .btn-custom {
     background-color: #DBA91D;
   }
-  .btn-custom:hover{
+
+  .btn-custom:hover {
     background-color: var(--btn-hover)
   }
-  form{
+
+  form {
     background-color: var(--bg);
     margin-top: 50px;
     margin: 10px;
     border-radius: 10px;
   }
-  #resultado{
+
+  #resultado {
     background-color: var(--bg-mobile);
     margin: 0 20px;
     border-radius: 10px;
   }
-  nav{
+
+  nav {
     background-color: var(--primary);
     padding: 1px;
   }

@@ -9,8 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
 function setTheme(theme) {
   if (theme === "dark") {
     body.classList.add("dark-mode");
-    dropdownButton.classList.remove("btn-light");
-    dropdownButton.classList.add("btn-dark");
     dropdownButton.innerHTML = '<i class="bi bi-moon-fill"></i>';
     localStorage.setItem("theme", "dark");
   } else {

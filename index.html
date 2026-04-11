@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,29 +17,43 @@
 
 <body>
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg custom-bg p-20"> <!-- Menu -->
-            <div class="container-fluid">
-                <a class="navbar text-a custom-a text-nav" href="#">
-                    <img src="imagens/logo-white.png" alt="Logo" width="50" height="50" class="d-inline-block">
-                    <a href="#" class="text-a">TopTurismo</a>
-                </a>
+        <nav class="navbar fixed-top navbar-expand-lg custom-bg p-3">
+
+            <div class="container-fluid d-flex align-items-center flex-wrap">
+
+                <div class="d-flex align-items-center">
+                    <img src="imagens/logo-white.png" width="50" height="50">
+                    <a href="#" class="text-a ms-2 logo-texto">TopTurismo</a>
+                </div>
+
+                <div class="mx-auto busca-container">
+                    <div class="busca-caixa">
+                        <input type="text"
+                        placeholder="Buscar destinos...">
+                    </div>
+                </div>
+
                 <div class="dropdown ms-auto">
-                    <button class="btn btn-light dropdown-toggle" type="button" id="temaMenu" data-bs-toggle="dropdown"
-                        aria-expanded="false">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="temaMenu" data-bs-toggle="dropdown">
                         <i class="bi bi-circle-half"></i> Tema
                     </button>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="temaMenu">
+
+                    <ul class="dropdown-menu dropdown-menu-end">
                         <li>
                             <a class="dropdown-item" onclick="setTheme('light')">
-                            <i class="bi bi-sun-fill me-2"></i>Claro</a>
+                                <i class="bi bi-sun-fill me-2"></i>Claro
+                            </a>
                         </li>
                         <li>
                             <a class="dropdown-item" onclick="setTheme('dark')">
-                            <i class="bi bi-moon-fill me-2"></i>Escuro</a>
+                                <i class="bi bi-moon-fill me-2"></i>Escuro
+                            </a>
                         </li>
                     </ul>
                 </div>
+
             </div>
+
         </nav>
     </header>
 
@@ -88,7 +103,7 @@
                         <img src="imagens/amazonia.jpg" class="img-opacidade" width="100%">
                         <div class="container">
                             <div class="carousel-caption">
-                                <h3>Amazonas</h3>                               
+                                <h3>Amazonas</h3>
                             </div>
                         </div>
                     </div>
@@ -96,7 +111,7 @@
                         <img src="imagens/parana.jpg" class="img-opacidade" width="100%">
                         <div class="container">
                             <div class="carousel-caption">
-                                <h3>Paraná</h3>                               
+                                <h3>Paraná</h3>
                             </div>
                         </div>
                     </div>
