@@ -1,32 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
 :root {
   --bg: #ffffff;
   --text: #000000;
   --primary: #070F1F;
-  --primary-hover: #af8b28;
+  --primary-hover: #06062e;
   --card-bg: #ffffff;
-  --btn-bg: #DBA91D;
+  --btn-bg: #ff7020;
   --btn-hover: var(--primary-hover);
   --bg-mobile: #fff;
+  --border: #000000;
 }
 
 .dark-mode {
-  --bg: #070f1f;
+  --bg: #000000;
   --text: #f5f5f5;
   --primary: #070F1F;
-  --primary-hover: rgb(5, 49, 5);
-  --primary-hover: #af8b28;
-  --card-bg: #49494981;
-  --btn-bg: #DBA91D;
+  --primary-hover: #06062e;
+  --card-bg: #070F1F;
+  --btn-bg: #ff7020;
   --btn-hover: var(--primary-hover);
   --bg-mobile: #070F1F;
+  --border: #fff
 }
 
 body {
   background-color: var(--bg);
   color: var(--text);
-  font-family: 'Oswald', Helvetica, Arial, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   margin: 0;
   letter-spacing: 0.2px;
 }
@@ -52,7 +53,7 @@ nav .text-a:hover {
   padding: 0;
   font-size: 20px;
   font-weight: 600;
-  font-family: 'Oswald', Helvetica, Arial, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .busca-caixa input {
@@ -104,18 +105,20 @@ nav .text-a:hover {
 
 .carousel-caption h3 {
   font-size: clamp(2rem, 10vw, 5rem);
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  letter-spacing: 1px;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
   margin: 0;
 }
 
-.btn-custom {
-  background-color: var(--btn-bg);
-  color: #fff;
-  border: none;
-  margin-bottom: 3px;
-}
+  .btn-custom {
+    background-color: #ff7020;
+    border-radius: 40px;
+    padding: 20px;
+    transition: 0.3s;
+    border: none;
+    color: white;
+    font-weight: bold;
+  }
 
 .btn-custom:hover {
   background-color: var(--btn-hover);
@@ -125,6 +128,9 @@ nav .text-a:hover {
 .card {
   background-color: var(--card-bg);
   color: var(--text);
+  border-width: 1px;
+  border-style: solid;
+  border-color:var(--border);
 }
 
 a {
@@ -136,9 +142,17 @@ a:hover {
   color: #0e0d57;
 }
 
+.form-label{
+  color: #ff7020;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 .form-control,
 .form-select {
-  background-color: var(--card-bg);
+  background-color: var(--bg);
+  border-radius: 20px;
+  padding: 15px;
 }
 
 section {
@@ -211,9 +225,18 @@ footer {
   .busca-caixa input {
     width: 150px;
   }
+  .busca-caixa input:focus {
+  width: 160px;
+}
 
   .btn-custom {
-    background-color: #DBA91D;
+    background-color: #ff7020;
+    border-radius: 40px;
+    padding: 20px;
+    transition: 0.3s;
+    border: none;
+    color: white;
+    font-weight: bold;
   }
 
   .btn-custom:hover {
