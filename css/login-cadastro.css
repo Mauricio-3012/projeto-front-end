@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Trava a rolagem global no desktop */
+body, html {
+    height: 100%;
+    overflow: hidden; 
+    background-color: #ffffff;
+}
+
+.container-principal {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* --- COLUNA DO FORMULÁRIO (ESQUERDA) --- */
+.secao-login {
+    flex: 1;
+    height: 100vh;
+    padding: 40px 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    overflow-y: auto; /* Apenas o formulário rola */
+}
+
+.conteudo-central {
+    max-width: 460px;
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.logotipo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    font-size: 22px;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.logotipo img { width: 32px; }
+
+.titulo-principal {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+/* --- LABELS LARANJA --- */
+.campo-entrada {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-entrada label {
+    font-size: 12px;
+    font-weight: 700;
+    color: #ff7020;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.campo-entrada input, .campo-entrada select {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.campo-entrada input:focus {
+    border-color: #ff7020;
+}
+
+.grid-2-colunas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.botao-continuar {
+    background-color: #ff7020;
+    color: #fff;
+    border: none;
+    padding: 16px;
+    width: 100%;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.botao-continuar:hover{
+    background-color:  #06062e;
+}
+.secao-hero-imagem {
+    flex: 1.2;
+    height: 100vh;
+    background-image: url('../imagens/hero-bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.botao-fechar-tela {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.extra{
+    text-align: center; 
+    margin-top: 40px;
+}
+.extra a{
+    color: #ff7020; 
+    font-weight: 700; 
+    text-decoration: none;
+}
+.extra a:hover{
+    text-decoration: underline;
+}
+.botao-fechar-tela:hover {
+    transform: scale(1.1);
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .secao-hero-imagem { display: none; }
+    body, html { overflow: auto; }
+    .secao-login { height: auto; padding: 40px 20px; }
+}
+
+@media (max-width: 600px) {
+    .grid-2-colunas { grid-template-columns: 1fr; gap: 0; }
+}
