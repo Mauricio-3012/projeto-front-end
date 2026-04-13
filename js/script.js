@@ -1,3 +1,4 @@
+// modo claro/escuro
 const body = document.body;
 const dropdownButton = document.getElementById("temaMenu");
 
@@ -20,6 +21,7 @@ function setTheme(theme) {
   }
 }
 
+// form reserva
 const form = document.getElementById("reservaForm");
 const btnConfirmar = document.getElementById("btnConfirmar");
 const resultado = document.getElementById("resultado");
