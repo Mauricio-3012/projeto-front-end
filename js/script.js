@@ -52,12 +52,12 @@ btnConfirmar.addEventListener("click", () => {
     alert(`Não é possível adicionar mais de 9 passageiros.`);
     return;
   }
-  
+
   const total = calcularTotal(Number(distancia), passageiros, assento);
   const valorFormatado = total.toLocaleString('pt-BR', {
-      style: 'currency',
-      currency: 'BRL'
-    });
+    style: 'currency',
+    currency: 'BRL'
+  });
   form.classList.add("d-none");
   resultado.classList.remove("d-none");
   resumo.innerHTML = `

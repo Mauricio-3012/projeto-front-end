@@ -110,15 +110,15 @@ nav .text-a:hover {
   margin: 0;
 }
 
-  .btn-custom {
-    background-color: #ff7020;
-    border-radius: 40px;
-    padding: 20px;
-    transition: 0.3s;
-    border: none;
-    color: white;
-    font-weight: bold;
-  }
+.btn-custom {
+  background-color: #ff7020;
+  border-radius: 40px;
+  padding: 20px;
+  transition: 0.3s;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
 
 .btn-custom:hover {
   background-color: var(--btn-hover);
@@ -140,7 +140,7 @@ a:hover {
   color: #0e0d57;
 }
 
-.form-label{
+.form-label {
   color: #ff7020;
   text-transform: uppercase;
   font-weight: bold;
@@ -166,11 +166,96 @@ section {
   border-radius: 10px;
 }
 
-footer {
-  background-color: var(--primary);
+.footer-principal {
+  background-color: var(--primary-hover);
+  color: #ffffff;
+  padding: 60px 0 20px 0;
+  font-size: 18px;
+}
+
+.footer-principal h5 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 25px;
+  color: var(--btn-bg);
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ccc !important;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff !important;
+  padding-left: 5px;
+}
+
+.footer-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   color: #fff;
-  padding: 20px;
-  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.footer-input:focus {
+  border-bottom-color: var(--btn-bg);
+}
+
+.footer-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.footer-btn:hover {
+  background: #fff;
+  color: var(--primary-hover);
+}
+
+.footer-divisor {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 40px 0 20px 0;
+}
+
+.footer-bottom {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.footer-contato-item {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.social-icons-pro a {
+  font-size: 1.2rem;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.social-icons-pro a:hover {
+  color: var(--btn-bg);
+  transform: translateY(-3px);
 }
 
 .dark-mode .form-control,
@@ -213,9 +298,10 @@ footer {
   .busca-caixa input {
     width: 150px;
   }
+
   .busca-caixa input:focus {
-  width: 160px;
-}
+    width: 160px;
+  }
 
   .btn-custom {
     background-color: #ff7020;
