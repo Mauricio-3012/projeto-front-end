@@ -372,8 +372,13 @@ section {
 
 .dark-mode .form-control,
 .dark-mode .form-select {
-  background-color: var(--card-bg);
+  background-color: var(--primary);
   color: var(--text);
+}
+
+.form-control::placeholder {
+color: #ffffff;
+opacity: 0.7;
 }
 
 #resultado {
