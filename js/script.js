@@ -27,6 +27,7 @@ const btnConfirmar = document.getElementById("btnConfirmar");
 const resultado = document.getElementById("resultado");
 const resumo = document.getElementById("resumo");
 const novaReserva = document.getElementById("novaReserva");
+const msgErro = document.getElementById("erro")
 
 function calcularTotal(distancia, passageiros, assento) {
   let precoBase = distancia * 0.8 * passageiros;
@@ -46,7 +47,7 @@ btnConfirmar.addEventListener("click", () => {
   const assento = document.getElementById("assento").value;
 
   if (!nome || !destino || !passageiros || !assento) {
-    alert("Por favor, preencha todos os campos corretamente!");
+    erro.innerText = "Por favor, preencha todos os campos corretamente!";
     form.reset();
     return;
   }
