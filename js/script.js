@@ -38,6 +38,8 @@ function calcularTotal(distancia, passageiros, assento) {
 
   return precoBase + adicional;
 }
+
+// verificacao de dados / execucao do botao de confirmar reserva
 btnConfirmar.addEventListener("click", () => {
   const nome = document.getElementById("nome").value.trim();
   const destinoSelect = document.getElementById("destino");
@@ -45,26 +47,59 @@ btnConfirmar.addEventListener("click", () => {
   const distancia = destinoSelect.selectedOptions[0]?.dataset.distancia;
   const passageiros = parseInt(document.getElementById("passageiros").value);
   const assento = document.getElementById("assento").value;
+  const data = document.getElementById("data").value
 
   if (!nome || !destino || !passageiros || !assento) {
     erro.innerText = "Por favor, preencha todos os campos corretamente!";
     form.reset();
     return;
   }
+  if (!data) {
+    erro.innerText = "Por favor, selecione uma data.";
+    return;
+  }
   if (passageiros > 9) {
-    alert(`Não é possível adicionar mais de 9 passageiros.`);
+    erro.innerText = "Não é possível adicionar mais de 9 passageiros.";
     return;
   }
 
+
+
+  // requisitos data -> 1 mes de antecedencia / nao pode ser feita no passado
+  const dataReserva = new Date(data + "T00:00:00");
+  const hoje = new Date();
+  hoje.setHours(0, 0, 0, 0);
+
+  const dataMinima = new Date();
+  dataMinima.setMonth(dataMinima.getMonth() + 1);
+  dataMinima.setHours(0, 0, 0, 0);
+
+  if (dataReserva < hoje) {
+    erro.innerText = "A reserva não pode ser feita no passado!";
+    return;
+  }
+  if (dataReserva < dataMinima) {
+    erro.innerText = "A reserva deve ser feita com pelo menos 1 mês de antecedência!";
+    return;
+  }
+  msgErro.innerText = "";
+
+  // formata data
+  const dataFormatada = data.split('-').reverse().join('/');
+
   const total = calcularTotal(Number(distancia), passageiros, assento);
+
+  // formata valor total
   const valorFormatado = total.toLocaleString('pt-BR', {
     style: 'currency',
     currency: 'BRL'
   });
+
+  // mostra resultado
   form.classList.add("d-none");
   resultado.classList.remove("d-none");
   resumo.innerHTML = `
-    <p> Sua reserva para <b>${destino}</b> foi confirmada.</p>
+    <p> Sua reserva para <b>${destino}</b> no dia <b>${dataFormatada}</b> foi confirmada.</p>
     <p> Distância: <b>${distancia} km</b></p>
     <p> Passageiros: <b>${passageiros}</b></p>
     <p> Tipo de assento: <b>${assento}</b></p>

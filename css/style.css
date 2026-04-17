@@ -377,6 +377,11 @@ section {
 }
 
 .form-control::placeholder {
+color: #000000;
+opacity: 0.7;
+}
+
+.dark-mode .form-control::placeholder {
 color: #ffffff;
 opacity: 0.7;
 }
