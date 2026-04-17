@@ -63,8 +63,6 @@ btnConfirmar.addEventListener("click", () => {
     return;
   }
 
-
-
   // requisitos data -> 1 mes de antecedencia / nao pode ser feita no passado
   const dataReserva = new Date(data + "T00:00:00");
   const hoje = new Date();
