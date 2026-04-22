@@ -202,8 +202,9 @@ body {
 .nome-destino-overlay {
   color: #ffffff !important;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: clamp(1.2rem, 4vw, 1.8rem); 
   margin: 0;
+  letter-spacing: 1px;
 }
 
 .avaliacao-estrelas {
