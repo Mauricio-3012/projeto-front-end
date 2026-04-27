@@ -29,14 +29,17 @@ const resumo = document.getElementById("resumo");
 const novaReserva = document.getElementById("novaReserva");
 const msgErro = document.getElementById("erro")
 
-function calcularTotal(distancia, passageiros, assento) {
+function calcularTotal(distancia, passageiros, assento, transporte) {
   let precoBase = distancia * 0.8 * passageiros;
   let adicional = 0;
+
+  if (transporte === "Ônibus") precoBase = (distancia * 0.8 * passageiros) / 2
 
   if (assento === "VIP") adicional = 150 * passageiros;
   if (assento === "Executiva") adicional = 300 * passageiros;
 
   return precoBase + adicional;
+
 }
 
 // verificacao de dados / execucao do botao de confirmar reserva
@@ -46,10 +49,11 @@ btnConfirmar.addEventListener("click", () => {
   const destino = destinoSelect.value;
   const distancia = destinoSelect.selectedOptions[0]?.dataset.distancia;
   const passageiros = parseInt(document.getElementById("passageiros").value);
+  const transporte = document.getElementById("transporte").value;
   const assento = document.getElementById("assento").value;
   const data = document.getElementById("data").value
 
-  if (!nome || !destino || !passageiros || !assento) {
+  if (!nome || !destino || !passageiros || !assento || !transporte ) {
     erro.innerText = "Por favor, preencha todos os campos corretamente!";
     form.reset();
     return;
@@ -85,7 +89,7 @@ btnConfirmar.addEventListener("click", () => {
   // formata data
   const dataFormatada = data.split('-').reverse().join('/');
 
-  const total = calcularTotal(Number(distancia), passageiros, assento);
+  const total = calcularTotal(Number(distancia), passageiros, assento, transporte);
 
   // formata valor total
   const valorFormatado = total.toLocaleString('pt-BR', {

@@ -81,7 +81,6 @@ body {
 
 .user-icon:hover {
   color: var(--btn-bg) !important;
-  transform: scale(1.1);
 }
 
 .dropdown-menu {
