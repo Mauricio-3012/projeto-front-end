@@ -104,11 +104,7 @@ body {
 }
 
 .carousel-item img {
-  transition: transform 3s;
-}
-
-.carousel-item.active img {
-  transform: scale(1.1);
+  transition: transform 1s;
 }
 
 .carousel-caption {
@@ -165,6 +161,10 @@ body {
 
 .dark-mode .secao-intro p {
   color: #bbb;
+}
+
+#destinos a{
+  text-transform: uppercase;
 }
 
 .card-destino-custom {
