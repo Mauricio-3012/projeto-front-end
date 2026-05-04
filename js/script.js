@@ -101,11 +101,13 @@ btnConfirmar.addEventListener("click", () => {
   form.classList.add("d-none");
   resultado.classList.remove("d-none");
   resumo.innerHTML = `
-    <p> Sua reserva para <b>${destino}</b> no dia <b>${dataFormatada}</b> foi confirmada.</p>
-    <p> Distância: <b>${distancia} km</b></p>
+    <p> Destino: <b>${destino}</b></p>
+    <p> Data: <b>${dataFormatada}</b></p>
     <p> Passageiros: <b>${passageiros}</b></p>
+    <p> Tipo de transporte: <b>${transporte}</b>
     <p> Tipo de assento: <b>${assento}</b></p>
     <p>Valor total: <b>${valorFormatado}</b></p>
+
   `;
 });
 
